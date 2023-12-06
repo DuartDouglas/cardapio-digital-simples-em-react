@@ -1,0 +1,86 @@
+* {
+   box-sizing: border-box;
+   font-family: 'Open Sans', sans-serif;
+   padding: 0;
+   margin: 0;
+}
+
+:root {
+   --color-green-primary: #8DB258;
+   --color-green-secodary: #37AB00;
+   --color-gray-medium: #4D4D4D;
+   --color-gray-dark: #252525;
+   --color-white: #ffffff;
+}
+
+#app {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: #eeeeee;
+}
+
+#app>.container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: var(--color-white);
+   width: 100%;
+   padding: 3rem 1.25rem;
+}
+
+header h1 {
+   color: var(--color-gray-dark);
+}
+
+main {
+   margin-top: 2rem;
+}
+
+main > h2 {
+   font-size: 1.2rem;
+   line-height: 1.4rem;
+   font-weight: 400;
+   color: var(--color-gray-dark);
+}
+
+.container-menu {
+   border-bottom: 1px solid #c4c4c4;
+   margin-top: 1rem;
+}
+
+.item-menu {
+   padding-block: 1rem;
+   display: flex;
+   justify-content: space-between;
+   column-gap: 1rem;
+   border-top: 1px solid #c4c4c4;
+}
+
+.item-menu h4 {
+   color: var(--color-gray-dark);
+   font-size: 1rem;
+   line-height: 1.3rem;
+   font-weight: bold;
+}
+
+.item-menu p {
+   color: var(--color-gray-medium);
+   font-size: 1rem;
+   line-height: 1.3rem;
+   font-weight: 400;
+   margin-top: 0.3rem;
+}
+
+.item-menu .price {
+   color: var(--color-green-secodary);
+   margin-top: 1rem;
+   font-weight: bold;
+}
+
+
+@media screen and (min-width: 750px) {
+   #app>.container {
+      width: 750px;
+   }
+}
